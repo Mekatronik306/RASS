@@ -36,6 +36,9 @@ k_t = 150000;
 c_s = 300;
 c_t = 45;
 
+% Motor efficiency
+n = 0.94;
+
 % Matrices
 A = [0, 1, 0, 0; -k_s/m_s, -c_s/m_s, k_s/m_s, c_s/m_s; 0, 0, 0, 1; k_s/m_u, c_s/m_u, (-k_s-k_t)/m_u, (-c_s-c_t)/m_u]
 B = [0, 0; 0, 1/m_s; 0, 0; 1/m_u, 1/m_u]
